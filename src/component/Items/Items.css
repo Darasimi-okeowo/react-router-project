@@ -1,0 +1,93 @@
+.item--wrapper{
+    border: 2px solid transparent;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+}
+
+.items{
+    border: 2px solid transparent;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    flex-wrap: wrap;
+    background-color: hsla(0, 0%, 100%, .8);
+    /* min-width: 250px; */
+}
+
+.items h1{
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+.items p{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.Button{
+    border: 2px solid transparent;
+    border-radius: 200px;
+    padding: 20px;
+    background-color: #258ea6;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    place-items: center;
+}
+
+.item--wrapper .modal {
+    position: absolute;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-color: white;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 250px; */
+    /* margin-left: 510px; */
+}
+
+.modal h1{
+    padding-bottom: 30px;
+    font-size: 40px;
+    align-self: center;
+}
+
+.modal h4{
+    padding-bottom: 30px;
+    font-size: 40px;
+    align-self: center;
+    font-size: smaller;
+}
+
+.modal button{
+    border: 2px solid transparent;
+    border-radius: 200px;
+    padding: 20px;
+    width:  150px;
+    background-color: #258ea6;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
