@@ -15,6 +15,7 @@ function App() {
             <Switch>
               <Route exact path='/' component={Login}/>
               <ProtectedRoute path='/subscription' component={Subscription}/>
+              <Route path='*' component={() => '404 Not Found'}/>
             </Switch>
           </Router>
       </div>
