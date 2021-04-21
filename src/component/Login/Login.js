@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Auth from '../Auth'
-const Login = (props) => {
+
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -15,13 +15,13 @@ const Login = (props) => {
     console.log(e.target.value, "email");
   };
 
-  // const buttonHandler = () => {
-  //   // if (email === "dara" && password === "123") {
-  //   //   return;
-  //   // } else {
-  //   //   alert("wrong email and password");
-  //   // }
-  // };
+  const buttonHandler = () => {
+    if (email === "dara" && password === "123") {
+      return;
+    } else {
+      alert("wrong email and password");
+    }
+  };
   return (
     <div className="main-wrapper">
       <div className="wrapper">
@@ -49,11 +49,7 @@ const Login = (props) => {
             ></input>
           </div>
           <NavLink to="/subscription">
-            <button onClick={ () => {
-              Auth.login(() => {
-                props.history.push("/Subscription")
-              })
-            }}>SIGNIN</button>
+            <button onClick={buttonHandler}>SIGNIN</button>
           </NavLink>
           <em>Email: adududuke@gmail.com, Password: BlessedAdudu</em>
         </div>

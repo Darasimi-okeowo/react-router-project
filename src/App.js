@@ -6,7 +6,6 @@ import './component/Subscription/Subscription.css';
 import Login from './component/Login/Login';
 import Subscription from './component/Subscription/Subscription';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {ProtectedRoute} from './component/Protected.route'
 
 function App() {
   return (
@@ -14,8 +13,7 @@ function App() {
           <Router>
             <Switch>
               <Route exact path='/' component={Login}/>
-              <ProtectedRoute path='/subscription' component={Subscription}/>
-              <Route path='*' component={() => '404 Not Found'}/>
+              <Route path='/subscription' component={Subscription}/>
             </Switch>
           </Router>
       </div>
